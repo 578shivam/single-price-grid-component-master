@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Single Price Grid Component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      padding: 0%;
+      margin: 0%;
+      font-family: 'Kanit', sans-serif;
+      font-family: 'Karla', sans-serif;
+     font-family: 'Playfair Display', serif;
+      font-family: 'Roboto', sans-serif;
+      background-color: #e6eff6;
+      display: grid;
+      place-content: center;
+      @media  screen and (min-width:phone)
+       {
+        
+      }
+    }
+    .container{
+      display: grid;
+      grid-template-columns: 425px 414px;;
+      grid-template-rows: 200px 100px 100px;
+      padding: 85px;
+      margin: 33px;
+      
+    }
+    .gird-item1{
+      padding: 28px;
+      color: #6dc3c1;
+      background-color:#ffffff;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      font-size: 15px;
+      border-radius: 9px 9px 0px 0px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+      
+    }
+    .gird-item1 h2{
+      color:#c3d661;
+      font-size: 19px;
+    }
+    .gird-item1 h1{
+      font-size: 26px;
+      margin: 1px;
+    } 
+
+    .gird-item1 p{
+      color: #ccd3dc;
+      align-items: center;
+      font-size: 15px;
+    }
+    .gird-item2{
+      background-color:#2bb3b1;
+      grid-column-start: 1;
+      grid-column-end:2;
+      grid-row-start: 2;
+      grid-row-end: 5;
+      color: white;
+      padding: 35px;
+      border-radius: 1px 1px 1px 9px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+    
+   .gird-item2 p{
+    color: #b7f7fd;
+   }
+    
+    .gird-item2 button{
+      border-radius:10px 10px 10px 10px;
+      width: 266px;
+      height: 50px;
+      background-color:#bfdf32;
+      color: white;
+      border: #ffffff;
+      margin: 6px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 13px 16px 20px 0px;
+    }
+
+    .gird-item3{
+      background-color: #4abebd;
+      color: white;
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end:5;
+      padding: 29px;
+      border-radius: 1px 1px 9px 1px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+    .gird-item2 h2 span{
+      color:#5dd4d2;
+      font-size: 17px;
+
+    }
+    .gird-item3 ul{
+      list-style-type: none;
+    }
+    .gird-item3 li{
+      color: #96e2e4;
+    }
+    @media screen  and (min-width:478px) and (max-width:1440px) {
+      .container{
+        display: flex;
+        flex-direction: column;
+      }
+      
+    }
+    
+  
+
+
+    
+    
+      </style>
+</head>
+<body>
+ <div class="container">
+  <div class="gird-item1">
+    <h1>Join our community</h1>
+    <h2>30-day, hassle-free money back guarantee</h2>
+    <p>Gain acees to our full libary of Tutorials along with expert code reviews.<br> 
+      <br>Perfect for any developers who are serious about honing their skills.</p>
+  </div>
+  <div class="gird-item2">
+    <h2>Monthy Subscription</h2>
+    <h2>$29  <span>per month</span></h2>
+    <p>Full acces for less than $1 a day</p>
+    <button>Sign Up</button>
+  </div>
+  <div class="gird-item3">
+    <h2>Why Us</h2>
+    <ul>
+      <li>Titorials by industry experts</li>
+      <li>Peer & expert code review</li>
+      <li>Coding exercises</li>
+      <li>Access to our github repos</li>
+      <li>Community forum</li>
+      <li>Flashcard decks</li>
+      <li>New videos every week</li>
+    </ul>
+  </div>
+ </div>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">shivam kumar</a>.
+    </p>
+  </footer>
+</body>
+</html>
